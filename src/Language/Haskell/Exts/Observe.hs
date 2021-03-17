@@ -2,7 +2,7 @@
 module Language.Haskell.Exts.Observe where
 
 import           Data.Ratio
-import           Debug.Hoed.Pure       hiding (Module)
+import           Debug.Hoed       hiding (Module)
 import           Language.Haskell.Exts
 
 instance Observable Boxed
@@ -48,7 +48,6 @@ instance Observable a => Observable (FieldUpdate a)
 instance Observable a => Observable (GuardedRhs a)
 instance Observable a => Observable (IPBind a)
 instance Observable a => Observable (IPName a)
-instance Observable a => Observable (Kind a)
 instance Observable a => Observable (Stmt a)
 instance Observable a => Observable (Literal a)
 instance Observable a => Observable (ModuleName a)
